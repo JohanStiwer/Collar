@@ -4,34 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Información de Mascota</title>
+    <title>Información de Asthon</title>
   </head>
   <body>
     <header>
-      <h1>Nombre de la Mascota</h1>
+      <h1>Asthon</h1>
     </header>
 
     <main>
       <div class="image-container">
         <!-- Aquí va la imagen de la mascota -->
+        <img src="img/Asthon001.jpg" alt="Mi perro loco" />
       </div>
 
       <div class="button-container">
         <button id="contactoBtn">Información de Contacto</button>
         <button id="mascotaBtn">Información de Mascota</button>
       </div>
-
       <div class="popup" id="contactoPopup">
         <button class="closeBtn" onclick="closePopup('contactoPopup')">
           X
         </button>
-        <!-- Contenido del popup de Información de Contacto -->
-        
+        <ul>
+          <strong>Nombre de contacto:</strong>
+
+          <li>Jhojan Stiwer</li>
+
+          <strong>Teléfono:</strong>
+
+          <li>123456</li>
+        </ul>
       </div>
 
       <div class="popup" id="mascotaPopup">
         <button class="closeBtn" onclick="closePopup('mascotaPopup')">X</button>
         <!-- Contenido del popup de Información de Mascota -->
+        <ul>
+          <strong>Raza:</strong>
+          <li>Malamut</li>
+          <strong>Patologias:</strong>
+          <li>Ninguna</li>
+          <strong>Enfermades:</strong>
+          <li>Ninguna</li>
+          <strong>Alergias:</strong>
+          <li>Ninguna</li>
+        </ul>
       </div>
     </main>
 

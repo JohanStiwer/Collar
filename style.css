@@ -4,7 +4,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Asegura que el contenido se expanda al menos al 100% de la altura de la ventana */
 }
 
 header {
@@ -16,18 +16,23 @@ header {
 
 h1 {
   margin: 0;
-  flex: 1;
 }
 
 main {
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
   padding: 20px;
 }
 
 .image-container {
   width: 100%;
-  height: 200px; /* Ajusta según sea necesario */
-  background-color: #4f6f52;
-  margin-bottom: 20px;
+  max-height: 500px; /* Altura máxima del contenedor rectangular */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Evita la distorsión de la imagen manteniendo su relación de aspecto */
 }
 
 .button-container {
@@ -90,13 +95,7 @@ button {
 
 footer {
   background-color: #3a4d39;
-
   padding: 10px;
-
   text-align: center;
-
   color: #ece3ce;
-
-  margin-top: auto;
-  /* Empuja el footer al final de la página */
 }
