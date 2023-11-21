@@ -3,43 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Título de tu página</title>
-    <!-- Agrega enlaces a tus archivos de estilo CSS aquí -->
-    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Información de Mascota</title>
   </head>
   <body>
-    <!-- Encabezado -->
     <header>
-      <h1>Nombre de tu sitio</h1>
-      <p>Descripción breve de tu sitio</p>
+      <h1>Nombre de la Mascota</h1>
     </header>
 
-    <!-- Barra de navegación -->
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <!-- Contenido principal -->
     <main>
-      <section>
-        <h2>Sección 1</h2>
-        <p>Contenido de la sección 1.</p>
-      </section>
+      <div class="image-container">
+        <!-- Aquí va la imagen de la mascota -->
+      </div>
 
-      <section>
-        <h2>Sección 2</h2>
-        <p>Contenido de la sección 2.</p>
-      </section>
+      <button id="contactoBtn">Información de Contacto</button>
+      <button id="mascotaBtn">Información de Mascota</button>
+
+      <div class="popup" id="contactoPopup">
+        <!-- Contenido del popup de Información de Contacto -->
+      </div>
+
+      <div class="popup" id="mascotaPopup">
+        <!-- Contenido del popup de Información de Mascota -->
+      </div>
     </main>
 
-    <!-- Pie de página -->
-    <footer>
-      <p>&copy; 2023 Nombre de tu sitio. Todos los derechos reservados.</p>
-    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

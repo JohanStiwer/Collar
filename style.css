@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #02303F;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #10465B;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Ajusta según sea necesario */
+    background-color: #396F84;
+    margin-bottom: 20px;
+    /* Puedes agregar estilos adicionales para la imagen si es necesario */
+}
+
+button {
+    background-color: #651200;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #10465B;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos adicionales según sea necesario para los popups */
