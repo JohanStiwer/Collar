@@ -16,17 +16,28 @@
         <!-- Aquí va la imagen de la mascota -->
       </div>
 
-      <button id="contactoBtn">Información de Contacto</button>
-      <button id="mascotaBtn">Información de Mascota</button>
+      <div class="button-container">
+        <button id="contactoBtn">Información de Contacto</button>
+        <button id="mascotaBtn">Información de Mascota</button>
+      </div>
 
       <div class="popup" id="contactoPopup">
+        <button class="closeBtn" onclick="closePopup('contactoPopup')">
+          X
+        </button>
         <!-- Contenido del popup de Información de Contacto -->
       </div>
 
       <div class="popup" id="mascotaPopup">
+        <button class="closeBtn" onclick="closePopup('mascotaPopup')">X</button>
         <!-- Contenido del popup de Información de Mascota -->
       </div>
     </main>
+
+    <footer>
+      2023 Jhojan Stiwer. Todos los derechos reservados.
+      <!-- Contenido del pie de página -->
+    </footer>
 
     <script src="main.js"></script>
   </body>
